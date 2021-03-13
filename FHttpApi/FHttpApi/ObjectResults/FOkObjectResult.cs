@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FTeam.FHttpApi.ResultModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
@@ -10,7 +11,7 @@ namespace FHttpApi.ObjectResults
         //Default Status Code
         private const int DefaultStatusCode = StatusCodes.Status200OK;
 
-        public FOkObjectResult(FOkObjectResult objectResult) : base(objectResult)
+        public FOkObjectResult(FObjectResultModel objectResult) : base(objectResult)
         {
             StatusCode = DefaultStatusCode;
         }
