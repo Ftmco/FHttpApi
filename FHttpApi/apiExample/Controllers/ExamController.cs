@@ -16,7 +16,6 @@ namespace apiExample.Controllers
     {
         public async Task<IActionResult> Test()
         {
-            return await FOk(new FObjectResultModel { Code = "0", Title = "Success", Result = new { } });
+            return await FOk(new FObjectResultModel { Code = "0", Title = "Success", Result = new { } }
         }
     }
-}
