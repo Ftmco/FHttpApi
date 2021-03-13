@@ -10,7 +10,7 @@ namespace FHttpApi.ObjectResults
         //Default Status Code
         private const int DefaultStatusCode = StatusCodes.Status200OK;
 
-        public FOkObjectResult(object value) : base(value)
+        public FOkObjectResult(FOkObjectResult objectResult) : base(objectResult)
         {
             StatusCode = DefaultStatusCode;
         }
