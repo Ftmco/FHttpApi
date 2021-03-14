@@ -12,5 +12,9 @@ namespace FTeam.FHttpApiStaticFunctions.Interfaces
         Task<FOkObjectResult> GetSystemExceptionResultAsync();
 
         FOkObjectResult GetSystemExceptionResult();
+
+        Task<FOkObjectResult> GetOkEmptyResultAsync();
+
+        FOkObjectResult GetOkEmptyResult();
     }
 }
