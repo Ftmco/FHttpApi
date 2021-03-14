@@ -1,13 +1,19 @@
 ﻿using FHttpApi.ObjectResults;
 using FTeam.FHttpApi.ResultModels;
+using FTeam.FHttpApiStaticFunctions.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
 namespace FTeam.FHttpApiBase.FControllerBase
 {
+    /// <summary>
+    /// Friends Team Controller Base Extend ControllerBase 
+    /// </summary>
     public class FControllerBase : ControllerBase
     {
+        private readonly IOkResults _okResults;
+
         /// <summary>
         /// Null Ok Object Result To Client
         /// </summary>
@@ -44,8 +50,11 @@ namespace FTeam.FHttpApiBase.FControllerBase
 
         /// <summary>
         /// System Exceptions With 200 Status Code 
+        /// use 'await'
         /// </summary>
         /// <returns>FOkObjectResult</returns>
-        public async Task<FOkObjectResult> SystemException() => await Task.Run(() => new FOkObjectResult(new FObjectResultModel { Code = "2", Title = "System Exception", Result = new { } }));
+        public async Task<FOkObjectResult> SystemExceptionAsync() => await Task.Run(async () => await _okResults.GetSystemExceptionResultAsync());
+
+        public FOkObjectResult SystemException() => _okResults.GetSystemExceptionResult();
     }
 }

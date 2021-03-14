@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31025.218
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FHttpApi", "FHttpApi\FHttpApi.csproj", "{5DF228E6-110A-404D-A2EB-745AC4893225}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHttpApiBase", "FHttpApiBase\FHttpApiBase.csproj", "{E3DBED1E-F1FF-4392-BCB9-60C042729E3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FHttpApiBase", "FHttpApiBase\FHttpApiBase.csproj", "{E3DBED1E-F1FF-4392-BCB9-60C042729E3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{17FD90FA-2BB1-4E12-8D12-99712AA20B72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiExample", "apiExample\apiExample.csproj", "{F98964C6-96D6-4AB6-A1A4-DB9942096BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "apiExample", "apiExample\apiExample.csproj", "{F98964C6-96D6-4AB6-A1A4-DB9942096BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHttpApiStaticFunctions", "FHttpApiStaticFunctions\FHttpApiStaticFunctions.csproj", "{6EDFD823-3667-45F3-B9F1-7B009861834A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{F98964C6-96D6-4AB6-A1A4-DB9942096BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98964C6-96D6-4AB6-A1A4-DB9942096BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98964C6-96D6-4AB6-A1A4-DB9942096BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDFD823-3667-45F3-B9F1-7B009861834A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDFD823-3667-45F3-B9F1-7B009861834A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDFD823-3667-45F3-B9F1-7B009861834A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDFD823-3667-45F3-B9F1-7B009861834A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
