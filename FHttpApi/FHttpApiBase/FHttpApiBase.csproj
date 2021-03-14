@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FHttpApiStaticFunctions\FHttpApiStaticFunctions.csproj" />
     <ProjectReference Include="..\FHttpApi\FHttpApi.csproj" />
   </ItemGroup>
 
